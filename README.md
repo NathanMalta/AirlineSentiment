@@ -28,5 +28,5 @@ This project has a few notebooks and other python files used for data collection
 4) roberta.py: contains a helper class for classifying sentiment with the roBERTa model via the huggingface transformers library
 
 This repo also contains 2 data folders:
-1) scraped_data: raw comments from airline facebook pages scraped with 
+1) scraped_data: raw comments from airline facebook pages scraped with [facebook-scraper](https://github.com/kevinzg/facebook-scraper)
 2) sentiment_data: processed data, containing the number of positive/negative/neutral comments on each post 
