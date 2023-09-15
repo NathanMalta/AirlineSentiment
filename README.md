@@ -5,6 +5,16 @@ This project analyzes Facebook comments from the pages of four major US airlines
 
 ## Results
 
+From this project, we can determine the number of posts per day, the number of comments per post, and the sentiment of a sample of the comments:
+
+![Posts Per Day](media/postsPerDay.png)
+
+![Comments Per Post](media/numComments.png)
+
+![Sentiment](media/southwest-sentiment.png)
+
+Interestingly, there is a dropoff in Southwest's posting frequency in December 2022.  At the same time, the comments per post increases sharply.  Further, when looking at sentiment data it appears negative sentiment spikes during this time.  I believe this highlights a negative consumer perception of Southwest due to flight cancellations during this time.
+
 ## Using this repository
 First, install dependencies from the requirements.txt.  This can be done easily with pip:
 
@@ -20,10 +30,3 @@ This project has a few notebooks and other python files used for data collection
 This repo also contains 2 data folders:
 1) scraped_data: raw comments from airline facebook pages scraped with 
 2) sentiment_data: processed data, containing the number of positive/negative/neutral comments on each post 
-
-## Data Collection
-To scrape from facebook, run the facebook-scraper.ipynb folder.  In the second cell, you can specify the name of a Facebook page, a number of posts, and a number of comments for scraping.  Also specify a Facebook account's username and password for scraping.  Please note that this account may be banned.
-
-After the correct information is supplied, the notebook will scrape the desired posts, first without comments, and then with comments.  The data will be saved in the scraped_data folder.
-
-## Sentiment Analysis
