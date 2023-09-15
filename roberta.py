@@ -2,8 +2,6 @@ from transformers import AutoModelForSequenceClassification
 from transformers import TFAutoModelForSequenceClassification
 from transformers import AutoTokenizer
 import numpy as np
-import csv
-import urllib.request
 from enum import Enum
 
 class Sentiment(Enum):
